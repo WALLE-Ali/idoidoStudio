@@ -74,7 +74,7 @@ module.exports = {
         //HtmlWebpackPlugin，模板生成相关的配置，每个对于一个页面的配置，有几个写几个
         new HtmlWebpackPlugin({ //根据模板插入css/js等生成最终HTML
             favicon: './src/img/favicon.ico', //favicon路径，通过webpack引入同时可以生成hash值
-            filename: './index.html', //生成的html存放路径，相对于path
+            filename: '../index.html', //生成的html存放路径，相对于path
             template: './src/index.html', //html模板路径
             inject: 'body', //js插入的位置，true/'head'/'body'/false
             hash: false, //为静态资源生成hash值
